@@ -1,0 +1,14 @@
+.container {
+    margin: 30px;
+}
+
+blockquote {
+    background: #f9f9f9;
+    color: #111;
+    padding: 15px;
+    border-left: 2px solid #C2B6D1;
+}
+
+code {
+    color: purple;
+}
