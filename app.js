@@ -43,12 +43,8 @@ app.get('/:time', function(req, res) {
 
 });
 
-app.set( 'port', ( process.env.PORT || 5000 ));
-
-// Start node server
-app.listen( app.get( 'port' ), function() {
-  console.log( 'Node server is running on port ' + app.get( 'port' ));
-  });
+  var port = process.env.PORT || 3000;
+  app.listen(port);
 
 // app.listen(3000, '127.0.0.1', function() {
 // 	console.log('Server has started!');
