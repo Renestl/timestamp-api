@@ -15,12 +15,16 @@ app.get('/:time', function(req, res) {
 	var date = new Date(unix * 1000);
     var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-    var month = months[date.getMonth()];
-    var day = date.getDate();
-    var year = date.getFullYear();
+    for (var i = 0; i < months.length; i++) {
+      if (/^\w{8,}$/.test(req.params.time)) {
+          var month = months[date.getMonth()];
+          var day = date.getDate();
+          var year = date.getFullYear();
 
-    var result = month + ' ' + day + ', ' + year;
-    return result;
+          var result = month + ' ' + day + ', ' + year;
+          return result;
+      }           
+    }
   }
 
  if(!isNaN(req.params.time)) {
@@ -43,9 +47,9 @@ app.get('/:time', function(req, res) {
 
 });
 
-  var port = process.env.PORT || 3000;
-  app.listen(port);
+  // var port = process.env.PORT || 3000;
+  // app.listen(port);
 
-// app.listen(3000, '127.0.0.1', function() {
-// 	console.log('Server has started!');
-// });
+app.listen(3000, '127.0.0.1', function() {
+	console.log('Server has started!');
+});

@@ -4,7 +4,7 @@ Project created for FreeCodeCamp Backend challenges.
 
 ** by Jennifer Currie **
 
-[GitHub](https://github.com/Renestl) | [FreeCodeCamp](https://www.freecodecamp.com/renestl) | [Codepen](http://codepen.io/renestl/pen/ORdNKZ) | [LinkedIn]() | [Twitter](@robinskrizan)
+[GitHub](https://github.com/Renestl) | [FreeCodeCamp](https://www.freecodecamp.com/renestl) | [Codepen](http://codepen.io/renestl/pen/ORdNKZ) | [LinkedIn](https://www.linkedin.com/in/jennifer-currie-mba-rhia-5a89755) | [Twitter](@robinskrizan)
 
 ### Technologies Used
 
